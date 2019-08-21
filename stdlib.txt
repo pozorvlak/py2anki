@@ -1,0 +1,241 @@
+tags:python stdlib
+string;Common string operations;standard module
+re;Regular expression operations;standard module
+difflib;Helpers for computing deltas;standard module
+textwrap;Text wrapping and filling;standard module
+unicodedata;Unicode Database;standard module
+stringprep;Internet String Preparation;standard module
+readline;GNU readline interface;standard module
+rlcompleter;Completion function for GNU readline;standard module
+struct;Interpret bytes as packed binary data;standard module
+codecs;Codec registry and base classes;standard module
+datetime;Basic date and time types;standard module
+calendar;General calendar-related functions;standard module
+collections;Container datatypes;standard module
+collections.abc;Abstract Base Classes for Containers;standard module
+heapq;Heap queue algorithm;standard module
+bisect;Array bisection algorithm;standard module
+array;Efficient arrays of numeric values;standard module
+weakref;Weak references;standard module
+types;Dynamic type creation and names for built-in types;standard module
+copy;Shallow and deep copy operations;standard module
+pprint;Data pretty printer;standard module
+reprlib;Alternate repr() implementation;standard module
+enum;Support for enumerations;standard module
+numbers;Numeric abstract base classes;standard module
+math;Mathematical functions;standard module
+cmath;Mathematical functions for complex numbers;standard module
+decimal;Decimal fixed point and floating point arithmetic;standard module
+fractions;Rational numbers;standard module
+random;Generate pseudo-random numbers;standard module
+statistics;Mathematical statistics functions;standard module
+itertools;Functions creating iterators for efficient looping;standard module
+functools;Higher-order functions and operations on callable objects;standard module
+operator;Standard operators as functions;standard module
+pathlib;Object-oriented filesystem paths;standard module
+os.path;Common pathname manipulations;standard module
+fileinput;Iterate over lines from multiple input streams;standard module
+stat;Interpreting stat() results;standard module
+filecmp;File and Directory Comparisons;standard module
+tempfile;Generate temporary files and directories;standard module
+glob;Unix style pathname pattern expansion;standard module
+fnmatch;Unix filename pattern matching;standard module
+linecache;Random access to text lines;standard module
+shutil;High-level file operations;standard module
+macpath;Mac OS 9 path manipulation functions;standard module
+pickle;Python object serialization;standard module
+copyreg;Register pickle support functions;standard module
+shelve;Python object persistence;standard module
+marshal;Internal Python object serialization;standard module
+dbm;Interfaces to Unix “databases”;standard module
+sqlite3;DB-API 2.0 interface for SQLite databases;standard module
+zlib;Compression compatible with gzip;standard module
+gzip;Support for gzip files;standard module
+bz2;Support for bzip2 compression;standard module
+lzma;Compression using the LZMA algorithm;standard module
+zipfile;Work with ZIP archives;standard module
+tarfile;Read and write tar archive files;standard module
+csv;CSV File Reading and Writing;standard module
+configparser;Configuration file parser;standard module
+netrc;netrc file processing;standard module
+xdrlib;Encode and decode XDR data;standard module
+plistlib;Generate and parse Mac OS X .plist files;standard module
+hashlib;Secure hashes and message digests;standard module
+hmac;Keyed-Hashing for Message Authentication;standard module
+secrets;Generate secure random numbers for managing secrets;standard module
+os;Miscellaneous operating system interfaces;standard module
+io;Core tools for working with streams;standard module
+time;Time access and conversions;standard module
+argparse;Parser for command-line options, arguments and sub-commands;standard module
+getopt;C-style parser for command line options;standard module
+logging;Logging facility for Python;standard module
+logging.config;Logging configuration;standard module
+logging.handlers;Logging handlers;standard module
+getpass;Portable password input;standard module
+curses;Terminal handling for character-cell displays;standard module
+curses.textpad;Text input widget for curses programs;standard module
+curses.ascii;Utilities for ASCII characters;standard module
+curses.panel;A panel stack extension for curses;standard module
+platform;Access to underlying platform’s identifying data;standard module
+errno;Standard errno system symbols;standard module
+ctypes;A foreign function library for Python;standard module
+threading;Thread-based parallelism;standard module
+multiprocessing;Process-based parallelism;standard module
+concurrent.futures;Launching parallel tasks;standard module
+subprocess;Subprocess management;standard module
+sched;Event scheduler;standard module
+queue;A synchronized queue class;standard module
+_thread;Low-level threading API;standard module
+_dummy_thread;Drop-in replacement for the _thread module;standard module
+dummy_threading;Drop-in replacement for the threading module;standard module
+contextvars;Context Variables;standard module
+asyncio;Asynchronous I/O;standard module
+socket;Low-level networking interface;standard module
+ssl;TLS/SSL wrapper for socket objects;standard module
+select;Waiting for I/O completion;standard module
+selectors;High-level I/O multiplexing;standard module
+asyncore;Asynchronous socket handler;standard module
+asynchat;Asynchronous socket command/response handler;standard module
+signal;Set handlers for asynchronous events;standard module
+mmap;Memory-mapped file support;standard module
+email;An email and MIME handling package;standard module
+json;JSON encoder and decoder;standard module
+mailcap;Mailcap file handling;standard module
+mailbox;Manipulate mailboxes in various formats;standard module
+mimetypes;Map filenames to MIME types;standard module
+base64;Base16, Base32, Base64, Base85 Data Encodings;standard module
+binhex;Encode and decode binhex4 files;standard module
+binascii;Convert between binary and ASCII;standard module
+quopri;Encode and decode MIME quoted-printable data;standard module
+uu;Encode and decode uuencode files;standard module
+html;HyperText Markup Language support;standard module
+html.parser;Simple HTML and XHTML parser;standard module
+html.entities;Definitions of HTML general entities;standard module
+xml.etree.ElementTree;The ElementTree XML API;standard module
+xml.dom;The Document Object Model API;standard module
+xml.dom.minidom;Minimal DOM implementation;standard module
+xml.dom.pulldom;Support for building partial DOM trees;standard module
+xml.sax;Support for SAX2 parsers;standard module
+xml.sax.handler;Base classes for SAX handlers;standard module
+xml.sax.saxutils;SAX Utilities;standard module
+xml.sax.xmlreader;Interface for XML parsers;standard module
+xml.parsers.expat;Fast XML parsing using Expat;standard module
+webbrowser;Convenient Web-browser controller;standard module
+cgi;Common Gateway Interface support;standard module
+cgitb;Traceback manager for CGI scripts;standard module
+wsgiref;WSGI Utilities and Reference Implementation;standard module
+urllib;URL handling modules;standard module
+urllib.request;Extensible library for opening URLs;standard module
+urllib.response;Response classes used by urllib;standard module
+urllib.parse;Parse URLs into components;standard module
+urllib.error;Exception classes raised by urllib.request;standard module
+urllib.robotparser;Parser for robots.txt;standard module
+http;HTTP modules;standard module
+http.client;HTTP protocol client;standard module
+ftplib;FTP protocol client;standard module
+poplib;POP3 protocol client;standard module
+imaplib;IMAP4 protocol client;standard module
+nntplib;NNTP protocol client;standard module
+smtplib;SMTP protocol client;standard module
+smtpd;SMTP Server;standard module
+telnetlib;Telnet client;standard module
+uuid;UUID objects according to RFC 4122;standard module
+socketserver;A framework for network servers;standard module
+http.server;HTTP servers;standard module
+http.cookies;HTTP state management;standard module
+http.cookiejar;Cookie handling for HTTP clients;standard module
+xmlrpc;XMLRPC server and client modules;standard module
+xmlrpc.client;XML-RPC client access;standard module
+xmlrpc.server;Basic XML-RPC servers;standard module
+ipaddress;IPv4/IPv6 manipulation library;standard module
+audioop;Manipulate raw audio data;standard module
+aifc;Read and write AIFF and AIFC files;standard module
+sunau;Read and write Sun AU files;standard module
+wave;Read and write WAV files;standard module
+chunk;Read IFF chunked data;standard module
+colorsys;Conversions between color systems;standard module
+imghdr;Determine the type of an image;standard module
+sndhdr;Determine type of sound file;standard module
+ossaudiodev;Access to OSS-compatible audio devices;standard module
+gettext;Multilingual internationalization services;standard module
+locale;Internationalization services;standard module
+turtle;Turtle graphics;standard module
+cmd;Support for line-oriented command interpreters;standard module
+shlex;Simple lexical analysis;standard module
+tkinter;Python interface to Tcl/Tk;standard module
+tkinter.ttk;Tk themed widgets;standard module
+tkinter.tix;Extension widgets for Tk;standard module
+tkinter.scrolledtext;Scrolled Text Widget;standard module
+typing;Support for type hints;standard module
+pydoc;Documentation generator and online help system;standard module
+doctest;Test interactive Python examples;standard module
+unittest;Unit testing framework;standard module
+unittest.mock;mock object library;standard module
+unittest.mock;getting started;standard module
+test;Regression tests package for Python;standard module
+test.support;Utilities for the Python test suite;standard module
+test.support.script_helper;Utilities for the Python execution tests;standard module
+bdb;Debugger framework;standard module
+faulthandler;Dump the Python traceback;standard module
+pdb;The Python Debugger;standard module
+timeit;Measure execution time of small code snippets;standard module
+trace;Trace or track Python statement execution;standard module
+tracemalloc;Trace memory allocations;standard module
+distutils;Building and installing Python modules;standard module
+ensurepip;Bootstrapping the pip installer;standard module
+venv;Creation of virtual environments;standard module
+zipapp;Manage executable Python zip archives;standard module
+sys;System-specific parameters and functions;standard module
+sysconfig;Provide access to Python’s configuration information;standard module
+builtins;Built-in objects;standard module
+__main__;Top-level script environment;standard module
+warnings;Warning control;standard module
+dataclasses;Data Classes;standard module
+contextlib;Utilities for with-statement contexts;standard module
+abc;Abstract Base Classes;standard module
+atexit;Exit handlers;standard module
+traceback;Print or retrieve a stack traceback;standard module
+__future__;Future statement definitions;standard module
+gc;Garbage Collector interface;standard module
+inspect;Inspect live objects;standard module
+site;Site-specific configuration hook;standard module
+code;Interpreter base classes;standard module
+codeop;Compile Python code;standard module
+zipimport;Import modules from Zip archives;standard module
+pkgutil;Package extension utility;standard module
+modulefinder;Find modules used by a script;standard module
+runpy;Locating and executing Python modules;standard module
+importlib;The implementation of import;standard module
+parser;Access Python parse trees;standard module
+ast;Abstract Syntax Trees;standard module
+symtable;Access to the compiler’s symbol tables;standard module
+symbol;Constants used with Python parse trees;standard module
+token;Constants used with Python parse trees;standard module
+keyword;Testing for Python keywords;standard module
+tokenize;Tokenizer for Python source;standard module
+tabnanny;Detection of ambiguous indentation;standard module
+pyclbr;Python class browser support;standard module
+py_compile;Compile Python source files;standard module
+compileall;Byte-compile Python libraries;standard module
+dis;Disassembler for Python bytecode;standard module
+pickletools;Tools for pickle developers;standard module
+formatter;Generic output formatting;standard module
+msilib;Read and write Microsoft Installer files;standard module
+msvcrt;Useful routines from the MS VC++ runtime;standard module
+winreg;Windows registry access;standard module
+winsound;Sound-playing interface for Windows;standard module
+posix;The most common POSIX system calls;standard module
+pwd;The password database;standard module
+spwd;The shadow password database;standard module
+grp;The group database;standard module
+crypt;Function to check Unix passwords;standard module
+termios;POSIX style tty control;standard module
+tty;Terminal control functions;standard module
+pty;Pseudo-terminal utilities;standard module
+fcntl;The fcntl and ioctl system calls;standard module
+pipes;Interface to shell pipelines;standard module
+resource;Resource usage information;standard module
+nis;Interface to Sun’s NIS (Yellow Pages);standard module
+syslog;Unix syslog library routines;standard module
+optparse;Parser for command line options;standard module
+imp;Access the import internals;standard module
