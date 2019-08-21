@@ -6,14 +6,24 @@ Create an Anki deck for the names exported by a Python module.
 from importlib import import_module
 from sys import argv
 
-for module_name in argv[1:]:
-    module = import_module(module_name)
+
+def process_module(module, module_name):
     with open(module_name + '.txt', 'w') as f:
         print(f"tags:python {module_name}", file=f)
-        for attr_name in module.__all__:
+        attrs = getattr(module, '__all__', dir(module))
+        for attr_name in attrs:
             attr = getattr(module, attr_name)
             doc = getattr(attr, '__doc__', None)
             if doc:
                 lines = doc.split('\n')
                 if '->' not in lines[0]:
                     print(f"{module_name}.{attr_name};{lines[0]}", file=f)
+
+
+for module_name in argv[1:]:
+    if module_name.startswith('__'):
+        import __main__
+        module = getattr(__main__, module_name)
+    else:
+        module = import_module(module_name)
+    process_module(module, module_name)
