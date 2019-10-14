@@ -13,6 +13,8 @@ def process_module(module, module_name, object_type):
         print(f"tags:python python::{module_name}", file=f)
         attrs = getattr(module, '__all__', dir(module))
         for attr_name in attrs:
+            if attr_name.startswith('_'):
+                continue
             attr = getattr(module, attr_name)
             doc = getattr(attr, '__doc__', None)
             if doc:
