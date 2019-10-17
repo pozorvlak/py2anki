@@ -20,7 +20,7 @@ def process_module(module, module_name, object_type):
             attr = getattr(module, attr_name)
             doc = getattr(attr, '__doc__', None)
             if doc:
-                lines = [l.strip() for l in doc.split('\n')]
+                lines = [l.strip() for l in doc.splitlines()]
                 doc = first_true(
                         lines,
                         pred=lambda x: x != "" and '->' not in x,
