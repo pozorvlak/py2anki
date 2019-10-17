@@ -6,6 +6,8 @@ Create an Anki deck for the names exported by a Python module.
 from importlib import import_module
 import argparse
 
+from more_itertools import first_true
+
 
 def process_module(module, module_name, object_type):
     """Create Anki notes for a single module"""
@@ -18,12 +20,12 @@ def process_module(module, module_name, object_type):
             attr = getattr(module, attr_name)
             doc = getattr(attr, '__doc__', None)
             if doc:
-                lines = doc.split('\n')
-                if '->' not in lines[0]:
-                    doc = lines[0]
-                else:
-                    doc = "XXX please fill me in"
-                f.write(f"{module_name}.{attr_name};{doc};{object_type}\n")
+                lines = [l.strip() for l in doc.split('\n')]
+                doc = first_true(
+                        lines,
+                        pred=lambda x: x != "" and '->' not in x,
+                        default="XXX please fill me in")
+            f.write(f"{module_name}.{attr_name};{doc};{object_type}\n")
 
 parser = argparse.ArgumentParser(
         description="Generate Anki cards for Python modules")
