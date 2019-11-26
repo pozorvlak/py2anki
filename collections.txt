@@ -1,0 +1,8 @@
+tags:python python::collections
+collections.deque;list-like container with fast appends and pops on either end;standard library object
+collections.defaultdict;dict subclass that calls a factory function to supply missing values;standard library object
+collections.namedtuple;Returns a new subclass of tuple with named fields.;standard library object
+collections.UserList;A more or less complete user-defined wrapper around list objects;standard library object
+collections.Counter;Dict subclass for counting hashable items.  Sometimes called a bag;standard library object
+collections.OrderedDict;Dictionary that remembers insertion order;standard library object
+collections.ChainMap; A ChainMap groups multiple dicts (or other mappings) together;standard library object
