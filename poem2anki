@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+import fileinput
+import sys
+
+from more_itertools import windowed
+
+
+lines = fileinput.input(sys.argv[1:])
+lines = map(lambda x: x.rstrip(), lines)
+noblanks = filter(lambda x: x, lines)
+windows = windowed(noblanks, 3)
+for window in windows:
+    window = list(window)
+    window[-1] = f"{{{{c1::{window[-1]}}}}}"
+    print("<br>".join(window) + ";")
