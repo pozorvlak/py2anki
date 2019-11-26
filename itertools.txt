@@ -1,0 +1,20 @@
+tags:python python::itertools
+itertools.accumulate;([1,2,3,4,5]) --> 1 3 6 10 15;standard library object
+itertools.chain;('ABC', 'DEF') --> A B C D E F;standard library object
+itertools.chain.from_iterable;(['ABC', 'DEF']) --> A B C D E F;standard library object
+itertools.combinations;r-length tuples, in sorted order, no repeated elements;standard library object
+itertools.combinations_with_replacement;r-length tuples, in sorted order, with repeated elements;standard library object
+itertools.compress;('ABCDEF', [1,0,1,0,1,1]) --> A C E F;standard library object
+itertools.count;(10) --> 10 11 12 13 14 ...;standard library object
+itertools.cycle;('ABCD') --> A B C D A B C D ...;standard library object
+itertools.dropwhile;(lambda x: x<5, [1,4,6,4,1]) --> 6 4 1;standard library object
+itertools.filterfalse;(lambda x: x%2, range(10)) --> 0 2 4 6 8;standard library object
+itertools.groupby;sub-iterators grouped by value of key(v);standard library object
+itertools.islice;('ABCDEFG', 2, None) --> C D E F G;standard library object
+itertools.permutations;r-length tuples, all possible orderings, no repeated elements;standard library object
+itertools.product;cartesian product, equivalent to a nested for-loop;standard library object
+itertools.repeat;(10, 3) --> 10 10 10;standard library object
+itertools.starmap;(pow, [(2,5), (3,2), (10,3)]) --> 32 9 1000;standard library object
+itertools.takewhile;(lambda x: x<5, [1,4,6,4,1]) --> 1 4;standard library object
+itertools.tee;Return n independent iterators from a single iterable;standard library object
+itertools.zip_longest;('ABCD', 'xy', fillvalue='-') --> Ax By C- D-;standard library object

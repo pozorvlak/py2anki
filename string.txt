@@ -1,0 +1,13 @@
+tags:python python::string
+string.ascii_letters;Create a new string object from the given object. If encoding or;standard library object
+string.ascii_lowercase;Create a new string object from the given object. If encoding or;standard library object
+string.ascii_uppercase;Create a new string object from the given object. If encoding or;standard library object
+string.capwords;Split the argument into words using split, capitalize each;standard library object
+string.digits;Create a new string object from the given object. If encoding or;standard library object
+string.hexdigits;Create a new string object from the given object. If encoding or;standard library object
+string.octdigits;Create a new string object from the given object. If encoding or;standard library object
+string.printable;Create a new string object from the given object. If encoding or;standard library object
+string.punctuation;Create a new string object from the given object. If encoding or;standard library object
+string.whitespace;Create a new string object from the given object. If encoding or;standard library object
+string.Formatter;None;standard library object
+string.Template;A string class for supporting $-substitutions.;standard library object
