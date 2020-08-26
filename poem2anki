@@ -14,7 +14,9 @@ for infile in sys.argv[1:]:
         noblanks = filter(lambda x: x, lines)
         windows = windowed(noblanks, 3)
     with open(outfile, "w") as f_out:
-        writer = csv.writer(f_out, delimiter=';')
+        poem_name = Path(infile).stem
+        f_out.write(f"tags:poems poems::{poem_name}\n")
+        writer = csv.writer(f_out, delimiter=';', lineterminator='\n')
         for window in windows:
             window = list(window)
             window[-1] = f"{{{{c1::{window[-1]}}}}}"
