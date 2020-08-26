@@ -1,16 +1,21 @@
 #!/usr/bin/env python
 
-import fileinput
+import csv
+from pathlib import Path
 import sys
 
 from more_itertools import windowed
 
 
-lines = fileinput.input(sys.argv[1:])
-lines = map(lambda x: x.rstrip(), lines)
-noblanks = filter(lambda x: x, lines)
-windows = windowed(noblanks, 3)
-for window in windows:
-    window = list(window)
-    window[-1] = f"{{{{c1::{window[-1]}}}}}"
-    print("<br>".join(window) + ";")
+for infile in sys.argv[1:]:
+    outfile = Path(infile).with_suffix(".csv")
+    with open(infile, "r") as f_in:
+        lines = map(lambda x: x.rstrip(), f_in.readlines())
+        noblanks = filter(lambda x: x, lines)
+        windows = windowed(noblanks, 3)
+    with open(outfile, "w") as f_out:
+        writer = csv.writer(f_out, delimiter=';')
+        for window in windows:
+            window = list(window)
+            window[-1] = f"{{{{c1::{window[-1]}}}}}"
+            writer.writerow(["<br>".join(window), ""])
